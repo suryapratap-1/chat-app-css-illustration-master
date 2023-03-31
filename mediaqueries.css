@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px) {
+    .left-gradient-image {
+        width: 50%;
+    }
+
+    .right-gradient-image {
+        width: 50%;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 60px;
+    }
+
+    .right-content {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .left-gradient-image {
+        transform: translateX(2 0px);
+    }
+
+    .right-gradient-image {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .right-content {
+        align-items: center;
+        text-align: center;
+        font-size: 0.8rem;
+        padding: var(--padding);
+    }
+}

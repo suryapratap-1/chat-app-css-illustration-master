@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --contact-sub-heading-text: hsl(276, 100%, 81%);
+    --recieve-text-color: hsl(276, 55%, 52%);
+    --message-text-size: 0.5rem;
+    --send-text-color: hsl(271, 15%, 43%);
+    --placeholder-color: hsl(206, 6%, 79%);
+    --main-heading-color: hsl(271, 36%, 24%);
+    --paragraph-text-color: hsl(270, 7%, 64%);
+    --recieve-message-box-color: hsla(276, 55%, 52%, 0.207);
+    --padding: 12px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative; 
+    overflow: hidden;
+    
+}
+
+.left-gradient-image {
+    height: 85vh;
+    width: 35%;
+    border-radius: 0 0 50% 50%;
+    transform: translateX(-90px);
+    background: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    position: absolute;
+}
+
+.right-gradient-image {
+    height: 85vh;
+    width: 35%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateX(160px);
+    border-radius: 50% 50% 0 0;
+    background: hsla(293, 100%, 63%, 0.042);
+}
+
+.container {
+    flex-direction: row;
+    align-items: center;
+    margin: 80px auto 0;
+    width: 60%; 
+    padding: var(--padding);
+    gap: 15%;
+}
+
+/* mobile section */
+
+.mobile {
+    width: 280px;
+    height: 530px;
+    padding: var(--padding);
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.mobile-screen {
+    border-radius: 15px;
+    height: 506px;
+    background-color: rgba(0, 0, 0, 0.053);
+}
+
+.mobile-nudge {
+    position: absolute;
+    width: 50%;
+    height: 4%;
+    border-radius: 0 0 15px 15px;
+    background-color: white;
+    transform: translateX(calc(50% - 10px));
+}
+
+.contact-info-section {
+    flex-direction: row;
+    height: 70px;
+    border-radius: 18px 18px 8px 8px;
+    background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    align-items: center;
+    gap: 10px;
+    padding: 8% 0 0 6%;
+}
+
+.left-image-icon {
+    width: 50px;
+    color: white;
+}
+
+.contact-image img {
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.contact-detail {
+    gap: 2px;
+}
+
+.contact-name {
+    color: rgba(255, 255, 255, 0.829);
+    font-size: 0.8rem;
+}
+
+.contact-subheading {
+    color: var(--contact-sub-heading-text);
+    font-size: 0.6rem;
+}
+
+.setting-icon {
+    padding-left: 20%;
+}
+
+/* chat section */
+
+.chat-section {
+    padding: var(--padding);
+    gap: 8px;
+}
+
+.first-message-recieved {
+    gap: 8px;
+}
+
+.recieved-message {
+    width: 60%;
+    padding: 8px;
+    border-radius: 12px 12px 12px 4px;
+    background-color: var(--recieve-message-box-color);
+    font-size: var(--message-text-size);
+    color: var(--recieve-text-color);
+}
+
+.dog-images {
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: end;
+    gap: 5px;
+}
+
+.dog-image img {
+    width: 45px;
+    border-radius: 8px;
+}
+
+.first-message-send {
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.sent-message {
+    gap: 8px;
+    width: 60%;
+    padding: 8px;
+    font-size: var(--message-text-size);
+    background-color: rgba(255, 255, 255, 0.232);
+    border-radius: 12px 12px 4px 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.086);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* price section */
+
+.price-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    padding: 8px;
+    gap: 5px;
+    background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius: 10px 10px 10px 4px;
+}
+
+.price-detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-basis: 80%;
+    gap: 5px;
+}
+
+.price-detail p {
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.902);
+}
+
+h4 {
+    font-size: 0.8rem;
+    color: white;
+}
+
+.text-sending-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6px;
+    width: 232px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.text-sending-section p {
+    padding-left: 20px;
+    font-size: 0.6rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.send-text-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.send-text-icon i {
+    font-size: 12px;
+}
+
+/* right section */
+
+.right-content {
+    gap: 30px;
+}
+
+.right-content-heading {
+    font-size: 1.2rem;
+    color: var(--main-heading-color);
+}
+
+.right-content-paragraph {
+    line-height: 25px;
+    color: var(--paragraph-text-color);
+}
